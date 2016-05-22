@@ -61,7 +61,7 @@ def main(argv):
     if 'pageno' in locals():
       firstno = makeint(res[res.find('Results ')+8: res.find('-')-1])
       lastno = makeint(res[res.find('-')+2:res.find('of ')])
-      print 'Number of results on page', pageno, ':', lastno-firstno 
+      print 'Number of results on page', pageno, ':', lastno-firstno+1 
     else:
       print 'Number of results found', res[res.find('of ')+3:res.find('\n')]
 
